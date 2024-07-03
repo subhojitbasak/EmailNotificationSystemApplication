@@ -1,6 +1,11 @@
 package com.eds.Utility;
 
+import com.eds.Entity.EmailDetails;
+import com.eds.ExceptionHandler.SendEmailException;
+
 public interface EmailService {
 
-     void sendEmail(String to,String from, String sub, String body);
+    void sendSMTPEmail(EmailDetails emailDetails) throws SendEmailException;
+
+    void sendSESEmail(EmailDetails emailDetails) throws SendEmailException;
 }
