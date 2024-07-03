@@ -1,5 +1,6 @@
 package com.eds.Config;
 
+import com.eds.Factory.MailServiceProvider;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -7,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-public class GmailMailConfig {
+public class GmailMailConfig implements MailServiceProvider {
     @Value("${gmail.mail.host}")
     private String host;
 

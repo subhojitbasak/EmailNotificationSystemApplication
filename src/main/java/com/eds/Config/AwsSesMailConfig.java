@@ -1,13 +1,11 @@
 package com.eds.Config;
 
-import lombok.Getter;
-
+import com.eds.Factory.MailServiceProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@Getter
-public class AwsSesMailConfig {
+public class AwsSesMailConfig implements MailServiceProvider {
 
     @Value("${aws.mail.host}")
     private String host;
@@ -24,5 +22,28 @@ public class AwsSesMailConfig {
     @Value("${aws.mail.protocol}")
     private String protocol;
 
-    // getters
+    @Override
+    public String getHost() {
+        return host;
+    }
+
+    @Override
+    public String getProtocol() {
+        return protocol;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public int getPort() {
+        return port;
+    }
 }
