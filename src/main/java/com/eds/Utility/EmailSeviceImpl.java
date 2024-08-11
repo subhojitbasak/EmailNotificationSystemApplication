@@ -5,9 +5,11 @@ import com.eds.ExceptionHandler.SendEmailException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.*;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 @Slf4j
@@ -22,9 +24,13 @@ public class EmailSeviceImpl implements EmailService {
     @Autowired
     private JavaMailSender gmailMailSender;
 
+    @Autowired
+    private RestTemplate restTemplate;
+
 
     @Override
     public void sendSMTPEmail(EmailDetails emailDetails) throws SendEmailException {
+
         MimeMessage message = gmailMailSender.createMimeMessage();
 
         MimeMessageHelper helper = new MimeMessageHelper(message);
@@ -96,6 +102,26 @@ public class EmailSeviceImpl implements EmailService {
                 }
 
             }
+        }
+    }
+
+    public boolean tokenValidator(String bearerToken){
+        //1. send API GW request to validate the token
+        String api_gateway_url = "http://localhost:8080/fromEDS";
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<String> requestEntity = new HttpEntity<>(bearerToken, headers);
+        try {
+            log.info("sending request to API Gateway....");
+            ResponseEntity<String> validatedUser = restTemplate.exchange(api_gateway_url, HttpMethod.POST, requestEntity, String.class);
+            System.out.println("FROM RESPONSE ENTITY: USER: "+ validatedUser.getHeaders().get("username"));
+            String validateToken = validatedUser.getHeaders().getFirst("validateToken");
+            System.out.println("FROM RESPONSE ENTITY: isValid: "+validateToken);
+            log.info("-------Token is valid-------");
+            return Boolean.parseBoolean(validateToken);
+        }catch (Exception ex){
+            log.error("------Token is invalid-----");
+            return false;
         }
     }
 }

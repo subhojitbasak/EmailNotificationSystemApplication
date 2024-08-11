@@ -1,0 +1,156 @@
+2024-08-11 12:37:30 - c.e.EmailNotificationSystemApplication - Starting EmailNotificationSystemApplication using Java 17.0.9 with PID 21068 (E:\Spring_practice\demo\EDS\EmailNotificationSystemApplication\target\classes started by HP in E:\Spring_practice\demo\EDS\EmailNotificationSystemApplication)
+2024-08-11 12:37:30 - c.e.EmailNotificationSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-11 12:37:32 - c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-08-11 12:37:32 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 12:37:32 - c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-08-11 12:37:32 - c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-08-11 12:37:32 - c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-08-11 12:37:33 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-08-11 12:37:33 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-11 12:37:33 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-11 12:37:33 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-11 12:37:33 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2544 ms
+2024-08-11 12:37:33 - c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-08-11 12:37:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-08-11 12:37:34 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2024-08-11 12:37:34 - c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2024-08-11 12:37:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2024-08-11 12:37:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2024-08-11 12:37:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2024-08-11 12:37:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2024-08-11 12:37:34 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 12:37:34 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-08-11 12:37:34 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 12:37:34 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-08-11 12:37:34 - c.e.EmailNotificationSystemApplication - Started EmailNotificationSystemApplication in 4.911 seconds (process running for 5.855)
+2024-08-11 12:37:44 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-11 12:37:44 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-11 12:37:44 - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-11 12:37:44 - com.eds.Controller.EmailController - ----------------Token validation starting----------------
+2024-08-11 12:37:44 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:37:44 - com.eds.Utility.EmailSeviceImpl - ------Token is invalid-----
+2024-08-11 12:37:44 - com.eds.Controller.EmailController - ----------------Token validation ends--------------------
+2024-08-11 12:38:30 - com.eds.Controller.EmailController - ----------------Token validation starting----------------
+2024-08-11 12:38:30 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:38:30 - com.eds.Utility.EmailSeviceImpl - ------Token is invalid-----
+2024-08-11 12:38:30 - com.eds.Controller.EmailController - ----------------Token validation ends--------------------
+
+2024-08-11 12:39:00 - com.eds.Controller.EmailController - ----------------Token validation starting----------------
+2024-08-11 12:39:00 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:39:00 - com.eds.Utility.EmailSeviceImpl - ------Token is invalid-----
+2024-08-11 12:39:00 - com.eds.Controller.EmailController - ----------------Token validation ends--------------------
+2024-08-11 12:39:21 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:39:21 - com.eds.Utility.EmailSeviceImpl - ------Token is invalid-----
+2024-08-11 12:39:55 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:39:55 - com.eds.Utility.EmailSeviceImpl - -------Token is valid-------
+2024-08-11 12:40:45 - com.eds.Controller.EmailController - ----------------Token validation starting----------------
+2024-08-11 12:40:45 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:40:45 - com.eds.Utility.EmailSeviceImpl - ------Token is invalid-----
+2024-08-11 12:40:45 - com.eds.Controller.EmailController - ----------------Token validation ends--------------------
+2024-08-11 12:40:52 - com.eds.Controller.EmailController - ----------------Token validation starting----------------
+2024-08-11 12:40:52 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:40:52 - com.eds.Utility.EmailSeviceImpl - -------Token is valid-------
+2024-08-11 12:40:52 - com.eds.Controller.EmailController - ----------------Token validation ends--------------------
+2024-08-11 12:40:52 - com.eds.Controller.EmailController - Sending email to: subhojitbasak840@gmail.com
+2024-08-11 12:40:52 - com.eds.Utility.EmailSeviceImpl - Email sending from SMTP server...
+2024-08-11 12:40:57 - com.eds.Controller.EmailController - Email Sent successfully...
+2024-08-11 12:41:34 - com.eds.Controller.EmailController - ----------------Token validation starting----------------
+2024-08-11 12:41:34 - com.eds.Utility.EmailSeviceImpl - sending request to API Gateway....
+2024-08-11 12:41:34 - com.eds.Utility.EmailSeviceImpl - -------Token is valid-------
+2024-08-11 12:41:34 - com.eds.Controller.EmailController - ----------------Token validation ends--------------------
+2024-08-11 12:41:34 - com.eds.Controller.EmailController - Sending email to: subhojitbasak840@gmail.com
+2024-08-11 12:41:34 - com.eds.Utility.EmailSeviceImpl - Email sending from AWS SES server...
+2024-08-11 12:41:35 - com.eds.Utility.EmailSeviceImpl - Email sent successfully!!
+2024-08-11 12:41:35 - com.eds.Controller.EmailController - Email Sent successfully...
+2024-08-11 13:13:28 - c.e.EmailNotificationSystemApplication - Starting EmailNotificationSystemApplication using Java 17.0.9 with PID 6440 (E:\Spring_practice\demo\EDS\EmailNotificationSystemApplication\target\classes started by HP in E:\Spring_practice\demo\EDS\EmailNotificationSystemApplication)
+2024-08-11 13:13:28 - c.e.EmailNotificationSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-11 13:13:31 - c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-08-11 13:13:31 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 13:13:31 - c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-08-11 13:13:31 - c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-08-11 13:13:31 - c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-08-11 13:13:32 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-08-11 13:13:32 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-11 13:13:32 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-11 13:13:33 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-11 13:13:33 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4788 ms
+2024-08-11 13:13:33 - c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-08-11 13:13:33 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-08-11 13:13:34 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2024-08-11 13:13:34 - c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2024-08-11 13:13:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2024-08-11 13:13:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2024-08-11 13:13:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2024-08-11 13:13:34 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2024-08-11 13:13:34 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 13:13:34 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-08-11 13:13:34 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 13:13:34 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-08-11 13:13:34 - c.e.EmailNotificationSystemApplication - Started EmailNotificationSystemApplication in 9.476 seconds (process running for 10.629)
+2024-08-11 13:15:15 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-11 13:15:15 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-11 13:15:15 - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-11 20:41:53 - c.e.EmailNotificationSystemApplication - Starting EmailNotificationSystemApplication using Java 17.0.9 with PID 14948 (E:\Spring_practice\demo\EDS\EmailNotificationSystemApplication\target\classes started by HP in E:\Spring_practice\demo\EDS\EmailNotificationSystemApplication)
+2024-08-11 20:41:53 - c.e.EmailNotificationSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-11 20:41:55 - c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-08-11 20:41:55 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 20:41:56 - c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-08-11 20:41:56 - c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-08-11 20:41:56 - c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-08-11 20:41:57 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-08-11 20:41:57 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-11 20:41:57 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-11 20:41:57 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-11 20:41:57 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4167 ms
+2024-08-11 20:41:57 - c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-08-11 20:41:57 - c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-08-11 20:41:58 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2024-08-11 20:41:58 - c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2024-08-11 20:41:58 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2024-08-11 20:41:58 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2024-08-11 20:41:58 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2024-08-11 20:41:58 - c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2024-08-11 20:41:58 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-08-11 20:41:58 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-08-11 20:41:58 - c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-08-11 20:41:58 - c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-08-11 20:41:59 - c.e.EmailNotificationSystemApplication - Started EmailNotificationSystemApplication in 7.13 seconds (process running for 8.14)
