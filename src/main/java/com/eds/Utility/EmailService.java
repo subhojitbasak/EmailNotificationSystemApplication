@@ -8,4 +8,6 @@ public interface EmailService {
     void sendSMTPEmail(EmailDetails emailDetails) throws SendEmailException;
 
     void sendSESEmail(EmailDetails emailDetails) throws SendEmailException;
+
+    public boolean tokenValidator(String bearerToken);
 }
